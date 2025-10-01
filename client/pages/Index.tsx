@@ -7,7 +7,7 @@ export default function Index() {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-6 sm:py-8">
       <div className="w-full max-w-md flex flex-col items-center">
         {/* Logo */}
         <div className="w-20 h-20 bg-swift-red rounded-2xl flex items-center justify-center mb-4">

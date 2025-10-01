@@ -15,7 +15,7 @@ const NotFound = () => {
     <div className="min-h-screen flex items-center justify-center bg-white">
       <div className="text-center max-w-md mx-auto px-4">
         {/* Swift Logo */}
-        <div className="w-20 h-20 bg-swift-red rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <div className="w-20 h-20 bg-[#E60012] rounded-2xl flex items-center justify-center mx-auto mb-6">
           <svg
             width="40"
             height="40"
@@ -39,7 +39,7 @@ const NotFound = () => {
         
         <a 
           href="/" 
-          className="inline-flex items-center justify-center h-12 px-6 bg-swift-red text-white font-semibold rounded-xl hover:bg-red-700 transition-colors"
+          className="inline-flex items-center justify-center h-12 px-6 bg-[#E60012] text-white font-semibold rounded-xl hover:bg-red-700 transition-colors"
         >
           Voltar ao início
         </a>

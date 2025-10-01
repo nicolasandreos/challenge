@@ -32,13 +32,15 @@ const NotFound = () => {
         </div>
 
         <h1 className="text-6xl font-bold text-[#1A1A1A] mb-4">404</h1>
-        <h2 className="text-2xl font-semibold text-[#1A1A1A] mb-2">Página não encontrada</h2>
+        <h2 className="text-2xl font-semibold text-[#1A1A1A] mb-2">
+          Página não encontrada
+        </h2>
         <p className="text-base text-[#666] mb-8">
           A página que você está procurando não existe ou foi movida.
         </p>
-        
-        <a 
-          href="/" 
+
+        <a
+          href="/"
           className="inline-flex items-center justify-center h-12 px-6 bg-[#E60012] text-white font-semibold rounded-xl hover:bg-red-700 transition-colors"
         >
           Voltar ao início

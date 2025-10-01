@@ -30,7 +30,7 @@ export default function Index() {
         <h1 className="text-[30px] font-bold text-[#1A1A1A] leading-9 mb-2">
           Swift
         </h1>
-        
+
         {/* Subtitle */}
         <p className="text-base font-normal text-[#666] leading-6 mb-8 text-center">
           Sistema de Gamificação
@@ -103,7 +103,10 @@ export default function Index() {
             {/* Sign Up Link */}
             <p className="text-center text-sm">
               <span className="text-[#666]">Não tem uma conta? </span>
-              <a href="#" className="text-[#E60012] font-medium hover:underline">
+              <a
+                href="#"
+                className="text-[#E60012] font-medium hover:underline"
+              >
                 Criar conta
               </a>
             </p>
@@ -117,15 +120,24 @@ export default function Index() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs text-[#9CA3AF]">
-            <a href="#" className="hover:text-[#E60012] transition-colors whitespace-nowrap">
+            <a
+              href="#"
+              className="hover:text-[#E60012] transition-colors whitespace-nowrap"
+            >
               Termos de Uso
             </a>
             <span className="hidden sm:inline">•</span>
-            <a href="#" className="hover:text-[#E60012] transition-colors whitespace-nowrap">
+            <a
+              href="#"
+              className="hover:text-[#E60012] transition-colors whitespace-nowrap"
+            >
               Política de Privacidade
             </a>
             <span className="hidden sm:inline">•</span>
-            <a href="#" className="hover:text-[#E60012] transition-colors whitespace-nowrap">
+            <a
+              href="#"
+              className="hover:text-[#E60012] transition-colors whitespace-nowrap"
+            >
               Suporte
             </a>
           </div>

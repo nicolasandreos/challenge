@@ -1,5 +1,14 @@
 import { useState } from "react";
-import { ChevronDown, Calendar, DollarSign, CheckCircle, BarChart3, Clock, Star, Award } from "lucide-react";
+import {
+  ChevronDown,
+  Calendar,
+  DollarSign,
+  CheckCircle,
+  BarChart3,
+  Clock,
+  Star,
+  Award,
+} from "lucide-react";
 
 export default function Dashboard() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -39,17 +48,26 @@ export default function Dashboard() {
               </div>
               <ChevronDown size={16} className="text-black" />
             </button>
-            
+
             {showDropdown && (
               <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-[#E5E5E5] py-2 z-10">
-                <a href="#" className="block px-4 py-2 text-sm text-[#1A1A1A] hover:bg-gray-50">
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-[#1A1A1A] hover:bg-gray-50"
+                >
                   Perfil
                 </a>
-                <a href="#" className="block px-4 py-2 text-sm text-[#1A1A1A] hover:bg-gray-50">
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-sm text-[#1A1A1A] hover:bg-gray-50"
+                >
                   Configurações
                 </a>
                 <hr className="my-1 border-[#E5E5E5]" />
-                <a href="/" className="block px-4 py-2 text-sm text-[#1A1A1A] hover:bg-gray-50">
+                <a
+                  href="/"
+                  className="block px-4 py-2 text-sm text-[#1A1A1A] hover:bg-gray-50"
+                >
                   Sair
                 </a>
               </div>
@@ -89,7 +107,9 @@ export default function Dashboard() {
           <div className="space-y-4">
             {/* Current Points */}
             <div className="bg-[#FEF2F2] rounded-xl p-4 text-center">
-              <div className="text-2xl font-bold text-[#E60012] mb-1">7.800</div>
+              <div className="text-2xl font-bold text-[#E60012] mb-1">
+                7.800
+              </div>
               <div className="text-sm text-[#666]">Pontos Atuais</div>
             </div>
 
@@ -105,7 +125,9 @@ export default function Dashboard() {
             {/* Challenge Progress */}
             <div className="bg-[#F0F9FF] rounded-xl p-4 text-center">
               <div className="text-2xl font-bold text-[#0369A1] mb-1">68%</div>
-              <div className="text-sm text-[#666] mb-1">Progresso do Desafio</div>
+              <div className="text-sm text-[#666] mb-1">
+                Progresso do Desafio
+              </div>
               <div className="text-xs text-[#9CA3AF]">Meta: 10.000 pontos</div>
             </div>
           </div>
@@ -116,20 +138,20 @@ export default function Dashboard() {
           <h3 className="text-lg font-semibold text-[#1A1A1A] mb-4">
             Progresso do Desafio Adicional
           </h3>
-          
+
           <div className="flex items-center justify-between mb-3">
             <span className="text-sm text-[#666]">Progresso atual</span>
             <span className="text-sm text-[#666]">68%</span>
           </div>
-          
+
           {/* Progress Bar */}
           <div className="w-full h-3 bg-[#F3F4F6] rounded-full mb-3 overflow-hidden">
-            <div 
+            <div
               className="h-full bg-gradient-to-r from-[#FF4D6D] to-[#E60012] rounded-full"
-              style={{ width: '68%' }}
+              style={{ width: "68%" }}
             />
           </div>
-          
+
           <div className="flex items-center justify-between text-xs text-[#9CA3AF] mb-4">
             <span>0 pontos</span>
             <span>10.000 pontos</span>
@@ -141,7 +163,7 @@ export default function Dashboard() {
               <BarChart3 size={20} className="mr-2" />
               Ver Ranking
             </button>
-            
+
             <button className="w-full h-14 bg-[#E60012] rounded-xl flex items-center justify-center text-white font-semibold hover:bg-red-700 transition-colors">
               <Clock size={20} className="mr-2" />
               Histórico de Recompensas
@@ -151,8 +173,10 @@ export default function Dashboard() {
 
         {/* Recent Activities */}
         <div className="bg-white rounded-2xl border border-[#E5E5E5] shadow-[0_4px_20px_0_rgba(0,0,0,0.08)] p-4 mb-6">
-          <h3 className="text-lg font-semibold text-[#1A1A1A] mb-4">Atividades Recentes</h3>
-          
+          <h3 className="text-lg font-semibold text-[#1A1A1A] mb-4">
+            Atividades Recentes
+          </h3>
+
           <div className="space-y-3">
             {/* Activity 1 */}
             <div className="flex items-center p-3 bg-[#F8F9FA] rounded-xl">
@@ -160,8 +184,12 @@ export default function Dashboard() {
                 <CheckCircle size={16} className="text-black" />
               </div>
               <div className="flex-1">
-                <div className="text-sm font-medium text-[#1A1A1A]">Meta atingida</div>
-                <div className="text-xs text-[#666]">+500 pontos • há 2 horas</div>
+                <div className="text-sm font-medium text-[#1A1A1A]">
+                  Meta atingida
+                </div>
+                <div className="text-xs text-[#666]">
+                  +500 pontos • há 2 horas
+                </div>
               </div>
             </div>
 
@@ -171,7 +199,9 @@ export default function Dashboard() {
                 <Star size={16} className="text-black" />
               </div>
               <div className="flex-1">
-                <div className="text-sm font-medium text-[#1A1A1A]">Desafio concluído</div>
+                <div className="text-sm font-medium text-[#1A1A1A]">
+                  Desafio concluído
+                </div>
                 <div className="text-xs text-[#666]">+1.200 pontos • ontem</div>
               </div>
             </div>
@@ -182,8 +212,12 @@ export default function Dashboard() {
                 <Award size={16} className="text-black" />
               </div>
               <div className="flex-1">
-                <div className="text-sm font-medium text-[#1A1A1A]">Recompensa resgatada</div>
-                <div className="text-xs text-[#666]">Voucher R$ 100 • 3 dias</div>
+                <div className="text-sm font-medium text-[#1A1A1A]">
+                  Recompensa resgatada
+                </div>
+                <div className="text-xs text-[#666]">
+                  Voucher R$ 100 • 3 dias
+                </div>
               </div>
             </div>
           </div>
@@ -191,8 +225,10 @@ export default function Dashboard() {
 
         {/* Top 5 Ranking */}
         <div className="bg-white rounded-2xl border border-[#E5E5E5] shadow-[0_4px_20px_0_rgba(0,0,0,0.08)] p-4">
-          <h3 className="text-lg font-semibold text-[#1A1A1A] mb-4">Top 5 Ranking</h3>
-          
+          <h3 className="text-lg font-semibold text-[#1A1A1A] mb-4">
+            Top 5 Ranking
+          </h3>
+
           <div className="space-y-3">
             {/* 1st Place */}
             <div className="flex items-center p-3 bg-gradient-to-r from-[#FDE68A] to-[#FEF3C7] border border-[#F59E0B] rounded-xl">
@@ -200,7 +236,9 @@ export default function Dashboard() {
                 <span className="text-sm font-bold text-white">1</span>
               </div>
               <div className="flex-1">
-                <div className="text-sm font-medium text-[#1A1A1A]">Maria Santos</div>
+                <div className="text-sm font-medium text-[#1A1A1A]">
+                  Maria Santos
+                </div>
                 <div className="text-xs text-[#666]">12.450 pontos</div>
               </div>
             </div>
@@ -211,7 +249,9 @@ export default function Dashboard() {
                 <span className="text-sm font-bold text-white">2</span>
               </div>
               <div className="flex-1">
-                <div className="text-sm font-medium text-[#1A1A1A]">Carlos Lima</div>
+                <div className="text-sm font-medium text-[#1A1A1A]">
+                  Carlos Lima
+                </div>
                 <div className="text-xs text-[#666]">9.320 pontos</div>
               </div>
             </div>
@@ -222,7 +262,9 @@ export default function Dashboard() {
                 <span className="text-sm font-bold text-white">3</span>
               </div>
               <div className="flex-1">
-                <div className="text-sm font-medium text-[#1A1A1A]">João Silva (Você)</div>
+                <div className="text-sm font-medium text-[#1A1A1A]">
+                  João Silva (Você)
+                </div>
                 <div className="text-xs text-[#666]">7.800 pontos</div>
               </div>
             </div>
@@ -233,7 +275,9 @@ export default function Dashboard() {
                 <span className="text-sm font-bold text-white">4</span>
               </div>
               <div className="flex-1">
-                <div className="text-sm font-medium text-[#1A1A1A]">Ana Costa</div>
+                <div className="text-sm font-medium text-[#1A1A1A]">
+                  Ana Costa
+                </div>
                 <div className="text-xs text-[#666]">6.150 pontos</div>
               </div>
             </div>
@@ -244,7 +288,9 @@ export default function Dashboard() {
                 <span className="text-sm font-bold text-white">5</span>
               </div>
               <div className="flex-1">
-                <div className="text-sm font-medium text-[#1A1A1A]">Pedro Oliveira</div>
+                <div className="text-sm font-medium text-[#1A1A1A]">
+                  Pedro Oliveira
+                </div>
                 <div className="text-xs text-[#666]">5.890 pontos</div>
               </div>
             </div>

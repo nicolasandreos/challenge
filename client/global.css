@@ -21,8 +21,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 350 100% 45%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -41,6 +41,21 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    /* Swift brand colors */
+    --swift-red: 350 100% 45%;
+
+    /* Gray scale for Swift design */
+    --gray-50: 0 0% 98%;
+    --gray-100: 220 13% 91%;
+    --gray-200: 217 12% 83%;
+    --gray-300: 214 13% 75%;
+    --gray-400: 210 11% 67%;
+    --gray-500: 210 7% 56%;
+    --gray-600: 208 7% 46%;
+    --gray-700: 206 6% 36%;
+    --gray-800: 205 6% 26%;
+    --gray-900: 203 5% 16%;
 
     --sidebar-background: 0 0% 98%;
 

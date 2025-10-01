@@ -54,7 +54,7 @@ export default function Index() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Digite seu email"
-                className="w-full h-[50px] px-4 border border-[#D1D5DB] rounded-xl text-base text-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-swift-red focus:border-transparent"
+                className="w-full h-[50px] px-4 border border-[#D1D5DB] rounded-xl text-base text-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-[#E60012] focus:border-transparent"
               />
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function Index() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Digite sua senha"
-                className="w-full h-[50px] px-4 pr-12 border border-[#D1D5DB] rounded-xl text-base text-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-swift-red focus:border-transparent"
+                className="w-full h-[50px] px-4 pr-12 border border-[#D1D5DB] rounded-xl text-base text-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-[#E60012] focus:border-transparent"
               />
               <button
                 type="button"
@@ -83,7 +83,7 @@ export default function Index() {
           </div>
 
           {/* Login Button */}
-          <button className="w-full h-12 bg-swift-red rounded-xl flex items-center justify-center text-white text-base font-semibold mb-6 hover:bg-red-700 transition-colors">
+          <button className="w-full h-12 bg-[#E60012] rounded-xl flex items-center justify-center text-white text-base font-semibold mb-6 hover:bg-red-700 transition-colors">
             <span className="mr-2">Entrar</span>
             <ArrowRight size={20} className="rotate-180" />
           </button>
@@ -92,7 +92,7 @@ export default function Index() {
           <div className="text-center mb-6">
             <a
               href="#"
-              className="text-sm text-[#333] hover:text-swift-red transition-colors"
+              className="text-sm text-[#333] hover:text-[#E60012] transition-colors"
             >
               Esqueci minha senha
             </a>
@@ -103,7 +103,7 @@ export default function Index() {
             {/* Sign Up Link */}
             <p className="text-center text-sm">
               <span className="text-[#666]">Não tem uma conta? </span>
-              <a href="#" className="text-swift-red font-medium hover:underline">
+              <a href="#" className="text-[#E60012] font-medium hover:underline">
                 Criar conta
               </a>
             </p>
@@ -117,15 +117,15 @@ export default function Index() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs text-[#9CA3AF]">
-            <a href="#" className="hover:text-swift-red transition-colors whitespace-nowrap">
+            <a href="#" className="hover:text-[#E60012] transition-colors whitespace-nowrap">
               Termos de Uso
             </a>
             <span className="hidden sm:inline">•</span>
-            <a href="#" className="hover:text-swift-red transition-colors whitespace-nowrap">
+            <a href="#" className="hover:text-[#E60012] transition-colors whitespace-nowrap">
               Política de Privacidade
             </a>
             <span className="hidden sm:inline">•</span>
-            <a href="#" className="hover:text-swift-red transition-colors whitespace-nowrap">
+            <a href="#" className="hover:text-[#E60012] transition-colors whitespace-nowrap">
               Suporte
             </a>
           </div>

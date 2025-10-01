@@ -111,21 +111,21 @@ export default function Index() {
         </div>
 
         {/* Footer */}
-        <div className="mt-8 text-center">
-          <p className="text-xs text-[#9CA3AF] leading-4 mb-4 max-w-[254px]">
+        <div className="mt-6 sm:mt-8 text-center px-4">
+          <p className="text-xs text-[#9CA3AF] leading-4 mb-4 max-w-[254px] mx-auto">
             © 2024 Swift Gamificação. Todos os direitos reservados.
           </p>
-          
-          <div className="flex items-center justify-center space-x-2 text-xs text-[#9CA3AF]">
-            <a href="#" className="hover:text-swift-red transition-colors">
+
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs text-[#9CA3AF]">
+            <a href="#" className="hover:text-swift-red transition-colors whitespace-nowrap">
               Termos de Uso
             </a>
-            <span>•</span>
-            <a href="#" className="hover:text-swift-red transition-colors">
+            <span className="hidden sm:inline">•</span>
+            <a href="#" className="hover:text-swift-red transition-colors whitespace-nowrap">
               Política de Privacidade
             </a>
-            <span>•</span>
-            <a href="#" className="hover:text-swift-red transition-colors">
+            <span className="hidden sm:inline">•</span>
+            <a href="#" className="hover:text-swift-red transition-colors whitespace-nowrap">
               Suporte
             </a>
           </div>

@@ -37,7 +37,7 @@ export default function Index() {
         </p>
 
         {/* Login Card */}
-        <div className="w-full max-w-[320px] bg-white rounded-2xl border border-[#E5E5E5] p-6 shadow-[0_4px_20px_0_rgba(0,0,0,0.08)]">
+        <div className="w-full max-w-[320px] bg-white rounded-2xl border border-[#E5E5E5] p-4 sm:p-6 shadow-[0_4px_20px_0_rgba(0,0,0,0.08)]">
           {/* Card Title */}
           <h2 className="text-2xl font-semibold text-[#1A1A1A] leading-8 text-center mb-8">
             Entrar na sua conta

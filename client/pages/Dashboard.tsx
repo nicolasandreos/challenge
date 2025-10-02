@@ -77,7 +77,7 @@ export default function Dashboard() {
       </header>
 
       {/* Main Content */}
-      <main className="px-3 py-6 max-w-md mx-auto">
+      <main className="px-3 py-6 max-w-md mx-auto w-full">
         {/* Campaign Card */}
         <div className="bg-white rounded-2xl border border-[#E5E5E5] shadow-[0_4px_20px_0_rgba(0,0,0,0.08)] p-4 mb-6">
           {/* Campaign Header */}

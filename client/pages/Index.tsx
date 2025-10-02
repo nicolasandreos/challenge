@@ -3,9 +3,16 @@ import { useNavigate } from "react-router-dom";
 import { Eye, ArrowRight } from "lucide-react";
 
 export default function Index() {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    // In a real app, you would validate credentials here
+    navigate("/dashboard");
+  };
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-6 sm:py-8">

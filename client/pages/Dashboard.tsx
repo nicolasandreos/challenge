@@ -92,13 +92,13 @@ export default function Dashboard() {
           </div>
 
           {/* Campaign Details */}
-          <div className="flex items-center space-x-6 mb-6 text-sm text-[#666]">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6 mb-6 text-sm text-[#666]">
             <div className="flex items-center">
-              <Calendar size={16} className="mr-2" />
+              <Calendar size={16} className="mr-2 flex-shrink-0" />
               <span>01/10 a 31/12</span>
             </div>
             <div className="flex items-center">
-              <DollarSign size={16} className="mr-2" />
+              <DollarSign size={16} className="mr-2 flex-shrink-0" />
               <span>Voucher de R$ 500</span>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Eye, ArrowRight } from "lucide-react";
 
 export default function Index() {

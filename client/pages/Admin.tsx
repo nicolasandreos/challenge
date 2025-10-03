@@ -59,7 +59,9 @@ const getStatusConfig = (status: CampaignStatus) => {
 };
 
 export default function Admin() {
-  const [activeTab, setActiveTab] = useState<"campaigns" | "challenges" | "analytics">("campaigns");
+  const [activeTab, setActiveTab] = useState<
+    "campaigns" | "challenges" | "analytics"
+  >("campaigns");
 
   return (
     <div className="min-h-screen bg-[#F8F9FA] py-6 px-4">
@@ -90,7 +92,7 @@ export default function Admin() {
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#E60012]" />
               )}
             </button>
-            
+
             <button
               onClick={() => setActiveTab("challenges")}
               className={`px-4 py-2 text-xs font-medium transition-colors relative ${
@@ -104,7 +106,7 @@ export default function Admin() {
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#E60012]" />
               )}
             </button>
-            
+
             <button
               onClick={() => setActiveTab("analytics")}
               className={`px-4 py-2 text-xs font-medium transition-colors relative ${
@@ -139,7 +141,7 @@ export default function Admin() {
             <div className="space-y-4">
               {campaigns.map((campaign) => {
                 const statusConfig = getStatusConfig(campaign.status);
-                
+
                 return (
                   <div
                     key={campaign.id}
@@ -179,14 +181,18 @@ export default function Admin() {
         {/* Challenges Tab Content */}
         {activeTab === "challenges" && (
           <div className="text-center py-12">
-            <p className="text-[#718096]">Conteúdo de Desafios em desenvolvimento</p>
+            <p className="text-[#718096]">
+              Conteúdo de Desafios em desenvolvimento
+            </p>
           </div>
         )}
 
         {/* Analytics Tab Content */}
         {activeTab === "analytics" && (
           <div className="text-center py-12">
-            <p className="text-[#718096]">Conteúdo de Analytics em desenvolvimento</p>
+            <p className="text-[#718096]">
+              Conteúdo de Analytics em desenvolvimento
+            </p>
           </div>
         )}
       </div>
